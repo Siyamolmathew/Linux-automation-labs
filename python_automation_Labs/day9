@@ -1,0 +1,38 @@
+
+import os
+import sys
+
+print("======================================")
+print(" Day 9: FILE SYSTEM  & LOG AUTOMATION ")
+print("======================================")
+
+
+# 1. Define the target paths using relative routing
+log_file_path = "../system_audit.log"
+backup_dir = "./backups"
+
+# 2. Audit: Check if the week 1 log file exists
+print(f"[*] Auditing target file path: {log_file_path}")
+
+if os.path.exists(log_file_path):
+    #Fetch file size in bytes
+    file_size = os.path.getsize(log_file_path)
+    print("Target log file found!")
+    print(f" -> File Size: {file_size} bytes")
+else:
+    print(f"Warning: Target log file '{log_file_path}' not found.")
+    print(" -> Tip: Make sure your system_audit.log is in the present directory.")
+
+
+# 3. Automation: Ensure a backup directory exists
+print(f"\n[*] Checking backup infrastructure: {backup_dir}")
+
+if not os.path.exists(backup_dir):
+    # Programmically create the directory if its missing
+    os.makedirs(backup_dir)
+    print(f"Automation action: Created missing directory -> {backup_dir}")
+else:
+    print(f"Backup directory already provisioned.")
+
+print("\n================================================")
+
