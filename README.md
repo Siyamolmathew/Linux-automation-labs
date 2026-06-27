@@ -42,3 +42,23 @@ This module focused on developing scalable environment logic, utilizing low-leve
 
 ## 🛠️ Core Competencies Verified
 `Linux System Administration` | `Bash Shell Scripting` | `Systems Automation` | `Git Version Control` | `Network Security` | `Access Control (IAM)`
+---
+
+## 🔹 Week 2: Python Systems Automation & Network Diagnostics
+
+This module marked the transition from local shell scripts to structured object-oriented automation using Python, focusing on defensive programming, resource-efficient file streaming, and network layer auditing.
+
+### 📁 Core Engineering Labs
+* **Day 8: Environment Configuration Inspection Engine**
+  * [cite_start]Developed a system-tracking utility utilizing native runtime wrappers (`os` and `sys`) to programmatically scrape system paths, usernames, and evaluate interpreter execution boundaries[cite: 2970, 3039].
+* **Day 9: Defensive File Provisioning Tool**
+  * [cite_start]Implemented a programmatic file-auditor utilizing Boolean validation layers (`os.path.exists`) to execute relative filesystem routing (`..`) and provision backup directories defensively[cite: 2971, 3041].
+* **Day 10: Memory-Efficient Security Log Parser**
+  * [cite_start]Engineered a high-performance log-parsing utility that streams text files line-by-line using generators (`enumerate`) to conserve system RAM while isolating system error states using string overrides[cite: 2972, 3042].
+* **Days 11-13: Network Boundary Mapper & Diagnostic Framework**
+  * [cite_start]Designed an enterprise-grade network boundary probe leveraging raw socket programming (`socket.AF_INET`, `socket.SOCK_STREAM`)[cite: 2973, 3044]. [cite_start]Programmatically audited internal network interface cards (NICs) while executing multi-target external TCP handshakes using non-breaking exit codes (`connect_ex`) and strict latency timeouts[cite: 2973, 3044].
+
+### 🎯 Key Interview Competencies
+* [cite_start]**Defensive Software Design:** Verifying underlying infrastructure states before code execution to eliminate runtime crashes[cite: 2691, 2700].
+* [cite_start]**Resource Optimization:** Streaming massive datasets line-by-line to protect system hardware memory bounds[cite: 2708, 2719].
+* [cite_start]**Network Socket Programming:** Programmatically mapping perimeters and analyzing connection return codes over standard communication protocols[cite: 2792, 2931].
