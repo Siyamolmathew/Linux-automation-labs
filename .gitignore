@@ -1,2 +1,3 @@
 *.log
 
+production_traffic.log*
