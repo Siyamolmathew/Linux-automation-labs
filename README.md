@@ -62,3 +62,24 @@ This module marked the transition from local shell scripts to structured object-
 * [cite_start]**Defensive Software Design:** Verifying underlying infrastructure states before code execution to eliminate runtime crashes[cite: 2691, 2700].
 * [cite_start]**Resource Optimization:** Streaming massive datasets line-by-line to protect system hardware memory bounds[cite: 2708, 2719].
 * [cite_start]**Network Socket Programming:** Programmatically mapping perimeters and analyzing connection return codes over standard communication protocols[cite: 2792, 2931].
+# Week 3: Advanced Automation and Configuration Pipeline
+
+This directory contains a modular, production-grade infrastructure automation pipeline developed as part of the core infrastructure and security engineering track. The scripts automate routine system administration tasks, handle errors gracefully, and are managed by a centralized orchestration harness.
+
+## 🚀 Pipeline Components
+
+1. **Day 15: Metrics Serialization (`day15_metrics_serializer.py`)**
+   * Automatically gathers and logs mock system telemetry (CPU, RAM, storage points) into structured format.
+2. **Day 16 & 17: Environment Hardening & CLI Tools**
+   * Scripts focused on maintaining baseline environment health and providing interactive command-line access.
+3. **Day 18: Log Rotation Engine (`day_18_log_rotator.py`)**
+   * Monitors active logs, evaluates size constraints, and handles automatic archival rotations.
+4. **Day 19: Backup Archiver (`day19_backup_archiver.py`)**
+   * Isolates rotated raw log artifacts, packs them into timestamped, compressed `.tar.gz` bundles, and isolates them inside a secure backup vault.
+
+## 🛠️ Centralized Orchestration
+
+* **Master Harness (`day20_automation_harness.py`)**
+  * Serves as the central control plane that executes the entire pipeline sequentially.
+  * Implements strict UTF-8 stream isolation and error mapping using Python's `subprocess` module to ensure platform-agnostic execution and catch individual script crashes without stopping the pipeline.
+  * Generates an execution snapshot report saved to `master_pipeline_report.json`.
